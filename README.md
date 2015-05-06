@@ -1,6 +1,6 @@
 # device-library
-Device Library
-
+Device Library  
+See full list of incoming devices here: http://bit.ly/1Kiij8P   
 
 SYMA X5C-W 4CH 2.4G Quadcopter with Camera http://www.amazon.com/SYMA-X5C-W-2-4G-Quadcopter-Camera/dp/B00MNG37C2
 
