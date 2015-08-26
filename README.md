@@ -13,7 +13,7 @@ Contacts:<br>
 Tamika<br>
 Joanna<br>
 other student leads - tbd<br>
-Miwa & Steve (alumni advisors, mt733@cornell.edu, sw787@cornell.edu)<br>
+Miwa & Steve (alumni advisors, mt733@cornell.edu, sw787@cornell.edu)<br><br><br>
 
 
 
