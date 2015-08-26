@@ -2,7 +2,7 @@
 
 Steps prior to use:
 
-<b> 1) Please review the library policies and procedures here: https://docs.google.com/document/d/1u8d0jVQeiCd2Y_bmMXGVDNeeXB5UM8hm2QigQLT5tf4/edit?usp=sharing
+<b> 1) Please review the library policies and procedures here: https://docs.google.com/document/d/1u8d0jVQeiCd2Y_bmMXGVDNeeXB5UM8hm2QigQLT5tf4/edit?usp=sharing </b>
 
 <b> 2) Check device availability here: https://github.com/cornelltech/device-library/blob/master/device_availability </b>
 
