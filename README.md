@@ -9,11 +9,11 @@
 <b> 3) (Post Use) Provide Feedback here: https://docs.google.com/forms/d/1WZ1Jyb7E4dKLDfRX9b5_4vaEQg9ump85okdlrivu-H8/viewform </b>
 
 <br><br>
-Contacts:
-Tamika
-Joanna
-other student leads - tbd
-Miwa & Steve (alumni advisors, mt733@cornell.edu, sw787@cornell.edu)
+Contacts:<br>
+Tamika<br>
+Joanna<br>
+other student leads - tbd<br>
+Miwa & Steve (alumni advisors, mt733@cornell.edu, sw787@cornell.edu)<br>
 
 
 
