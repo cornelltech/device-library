@@ -1,7 +1,13 @@
 # device-library
-Device Library  
 
-<b> Check device availability here: https://github.com/cornelltech/device-library/blob/master/device_availability </b>
+Steps prior to use:
+
+<b> 1) Please review the library policies and procedures here: https://docs.google.com/document/d/1u8d0jVQeiCd2Y_bmMXGVDNeeXB5UM8hm2QigQLT5tf4/edit?usp=sharing
+
+<b> 2) Check device availability here: https://github.com/cornelltech/device-library/blob/master/device_availability </b>
+
+<b> 3) (Post Use) Provide Feedback here: https://docs.google.com/forms/d/1WZ1Jyb7E4dKLDfRX9b5_4vaEQg9ump85okdlrivu-H8/viewform </b>
+
 
 
 
