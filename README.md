@@ -1,12 +1,14 @@
 # device-library
 
-<b><u>Steps prior to use:</b></u>
+Welcome to the Cornell Tech Device Library homepage!
 
-<b> 1) Please review the library policies and procedures here: https://docs.google.com/document/d/1u8d0jVQeiCd2Y_bmMXGVDNeeXB5UM8hm2QigQLT5tf4/edit?usp=sharing </b>
+<b><u>Policies and Procedures:</b></u>
 
-<b> 2) Check device availability here: https://github.com/cornelltech/device-library/blob/master/device_availability </b>
+1) Please review the library policies and procedures here: https://docs.google.com/document/d/1u8d0jVQeiCd2Y_bmMXGVDNeeXB5UM8hm2QigQLT5tf4/edit?usp=sharing
 
-<b> 3) (Post Use) Provide Feedback here: https://docs.google.com/forms/d/1WZ1Jyb7E4dKLDfRX9b5_4vaEQg9ump85okdlrivu-H8/viewform </b>
+2) Check device availability here: https://github.com/cornelltech/device-library/blob/master/device_availability
+
+3) (Post Use) Provide Feedback here: https://docs.google.com/forms/d/1WZ1Jyb7E4dKLDfRX9b5_4vaEQg9ump85okdlrivu-H8/viewform
 
 <br><br>
 <b> Contact Information: </b> <br>
