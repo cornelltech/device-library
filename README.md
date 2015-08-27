@@ -9,13 +9,13 @@
 <b> 3) (Post Use) Provide Feedback here: https://docs.google.com/forms/d/1WZ1Jyb7E4dKLDfRX9b5_4vaEQg9ump85okdlrivu-H8/viewform </b>
 
 <br><br>
-<b> Contact Information:<br>
+<b> Contact Information: </b> <br>
 For checking out devices: Tamika & J<br>
 For new devices and feedback: Joanna & Other Student Leads (Pending)<br>
 For questions, comments, ideas: Miwa & Steve (Alumni advisors, mt733@cornell.edu, sw787@cornell.edu)<br><br><br>
 
 
-<b>See full list of incoming devices here: http://bit.ly/1Kiij8P   
+<b> See full list of incoming devices here: http://bit.ly/1Kiij8P    </b>
 
 *Canary: http://canary.is/
 
