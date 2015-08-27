@@ -3,14 +3,10 @@
 Welcome to the Cornell Tech Device Library homepage!
 
 <b><u>Policies and Procedures:</b></u>
-
 1) Please review the library policies and procedures here: https://docs.google.com/document/d/1u8d0jVQeiCd2Y_bmMXGVDNeeXB5UM8hm2QigQLT5tf4/edit?usp=sharing
-
 2) Check device availability here: https://github.com/cornelltech/device-library/blob/master/device_availability
-
 3) (Post Use) Provide Feedback here: https://docs.google.com/forms/d/1WZ1Jyb7E4dKLDfRX9b5_4vaEQg9ump85okdlrivu-H8/viewform
 
-<br><br>
 <b> Contact Information: </b> <br>
 For checking out devices: Tamika & J<br>
 For new devices and feedback: Joanna & Other Student Leads (Pending)<br>
