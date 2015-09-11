@@ -1,21 +1,25 @@
-# device-library
+# Cornell Tech Device Library
 
 Welcome to the Cornell Tech Device Library homepage!
 
-<b><u>Policies and Procedures:</b></u> <br>
-1) Review the library policies and procedures here:  <br> https://docs.google.com/document/d/1u8d0jVQeiCd2Y_bmMXGVDNeeXB5UM8hm2QigQLT5tf4/edit?usp=sharing  <br>
-2) Check device availability here:  <br>
-https://github.com/cornelltech/device-library/blob/master/device_availability <br>
-3) Provide feedback on your device experience here (post-use):  <br>
-https://docs.google.com/forms/d/1WZ1Jyb7E4dKLDfRX9b5_4vaEQg9ump85okdlrivu-H8/viewform <br>
+## Policies and Procedures
+1. [Review the library policies and procedures](https://docs.google.com/document/d/1u8d0jVQeiCd2Y_bmMXGVDNeeXB5UM8hm2QigQLT5tf4/edit?usp=sharing)
+2. [Check device availability](https://docs.google.com/spreadsheets/d/1kK5UfgKD5qJKQwRpiP9D4_JrgalhXOZEdnWLNRHiIus/edit?usp=sharing)
+3. [Provide feedback on your device experience (post-use)](https://docs.google.com/forms/d/1WZ1Jyb7E4dKLDfRX9b5_4vaEQg9ump85okdlrivu-H8/viewform)
 
-<b> Contact Information: </b> <br>
-For checking out devices: Tamika (tm497@cornell.edu)<br>
-For new devices and feedback: Joanna (rz258@cornell.edu), Sindhu (sb2354@cornell.edu) & Other Student Leads (Pending)<br>
-For questions, comments, ideas: Miwa & Steve (alumni advisors: mt733@cornell.edu & sw787@cornell.edu)<br><br><br>
+## Contact Information
+- For checking out devices: 
+    * [Tamika](tm497@cornell.edu) (administrative assistant)
+- For new devices and feedback: 
+    * [Joanna](rz258@cornell.edu) (CM'16)
+    * [Sindhu](sb2354@cornell.edu) (CM'17)
+    * Other Student Leads (Pending)
+- For questions, comments, ideas: 
+    * [Miwa](mt733@cornell.edu) (alumni advisor)
+    * [Steve](sw787@cornell.edu) (alumni advisor)
 
 
-<b> See full list of incoming devices here: http://bit.ly/1Kiij8P    </b>
+See full list of incoming devices here: http://bit.ly/1Kiij8P
 
 *Canary: http://canary.is/
 
