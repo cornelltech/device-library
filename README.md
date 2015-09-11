@@ -11,7 +11,7 @@ https://docs.google.com/forms/d/1WZ1Jyb7E4dKLDfRX9b5_4vaEQg9ump85okdlrivu-H8/vie
 
 <b> Contact Information: </b> <br>
 For checking out devices: Tamika (tm497@cornell.edu)<br>
-For new devices and feedback: Joanna (rz258@cornell.edu) & Other Student Leads (Pending)<br>
+For new devices and feedback: Joanna (rz258@cornell.edu), Sindhu (sb2354@cornell.edu) & Other Student Leads (Pending)<br>
 For questions, comments, ideas: Miwa & Steve (alumni advisors: mt733@cornell.edu & sw787@cornell.edu)<br><br><br>
 
 
