@@ -9,14 +9,14 @@ Welcome to the Cornell Tech Device Library homepage!
 
 ## Contact Information
 - For checking out devices: 
-    * [Tamika](tm497@cornell.edu) (administrative assistant)
+    * Tamika <tm497@cornell.edu> (administrative assistant)
 - For new devices and feedback: 
-    * [Joanna](rz258@cornell.edu) (CM'16)
-    * [Sindhu](sb2354@cornell.edu) (CM'17)
+    * Joanna <rz258@cornell.edu> (CM'16)
+    * Sindh <sb2354@cornell.edu> (CM'17)
     * Other Student Leads (Pending)
 - For questions, comments, ideas: 
-    * [Miwa](mt733@cornell.edu) (alumni advisor)
-    * [Steve](sw787@cornell.edu) (alumni advisor)
+    * Miwa <mt733@cornell.edu> (alumni advisor)
+    * Steve <sw787@cornell.edu> (alumni advisor)
 
 
 See full list of incoming devices here: http://bit.ly/1Kiij8P
