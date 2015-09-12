@@ -18,7 +18,7 @@ Welcome to the Cornell Tech Device Library homepage!
     * Miwa <mt733@cornell.edu> (alumni advisor)
     * Steve <sw787@cornell.edu> (alumni advisor)
 
-
+-
 **See full list of incoming devices here: http://bit.ly/1Kiij8P**
 
 ```
