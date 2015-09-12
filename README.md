@@ -19,8 +19,9 @@ Welcome to the Cornell Tech Device Library homepage!
     * Steve <sw787@cornell.edu> (alumni advisor)
 
 
-See full list of incoming devices here: http://bit.ly/1Kiij8P
+**See full list of incoming devices here: http://bit.ly/1Kiij8P**
 
+```
 *Canary: http://canary.is/
 
 *Belkin: http://www.belkin.com/us/Products/home-automation/c/wemo-home-automation/
@@ -64,3 +65,4 @@ Polaroid Cube http://www.polaroid.com/cube
 *Parot Drone: http://ardrone2.parrot.com/
 
 *Donated by company / or partial discount given
+```
