@@ -1,15 +1,15 @@
 # Cornell Tech Device Library
 
-```
-### [See full list of devices on wiki](https://github.com/cornelltech/device-library/wiki)
-```
 
-## Policies and Procedures
+>### [See full list of devices on wiki](https://github.com/cornelltech/device-library/wiki)
+---
+
+### Policies and Procedures
 1. [Review the library policies and procedures](https://docs.google.com/document/d/1u8d0jVQeiCd2Y_bmMXGVDNeeXB5UM8hm2QigQLT5tf4/edit?usp=sharing)
 2. [Check device availability](https://docs.google.com/spreadsheets/d/1kK5UfgKD5qJKQwRpiP9D4_JrgalhXOZEdnWLNRHiIus/edit?usp=sharing)
 3. [Provide feedback on your device experience (post-use)](https://docs.google.com/forms/d/1WZ1Jyb7E4dKLDfRX9b5_4vaEQg9ump85okdlrivu-H8/viewform)
 
-## Contact Information
+### Contact Information
 - For checking out devices: 
     * Tamika <tm497@cornell.edu> (administrative assistant)
 - For new devices and feedback: 
@@ -21,4 +21,4 @@
     * Steve <sw787@cornell.edu> (alumni advisor)
 
 -
-See full list of incoming devices here: http://bit.ly/1Kiij8P
+*See full list of incoming devices here: http://bit.ly/1Kiij8P*
