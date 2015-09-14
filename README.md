@@ -2,6 +2,7 @@
 
 
 >### [See full list of devices on wiki](https://github.com/cornelltech/device-library/wiki)
+
 ---
 
 ### Policies and Procedures
