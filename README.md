@@ -1,6 +1,6 @@
 # Cornell Tech Device Library
 
-## [Go to the wiki to see full list of devices](/wiki)
+## [See full list of devices here](https://github.com/cornelltech/device-library/wiki)
 
 ## Policies and Procedures
 1. [Review the library policies and procedures](https://docs.google.com/document/d/1u8d0jVQeiCd2Y_bmMXGVDNeeXB5UM8hm2QigQLT5tf4/edit?usp=sharing)
