@@ -1,6 +1,6 @@
 # Cornell Tech Device Library
 
-### [See full list of devices on Wiki](https://github.com/cornelltech/device-library/wiki)
+### [See the Wiki for full list of devices](https://github.com/cornelltech/device-library/wiki)
 
 ---
 
