@@ -17,8 +17,8 @@
     * Sindhu <sb2354@cornell.edu> (CM'17)
     * Other Student Leads (Pending)
 - For questions, comments, ideas: 
-    * Miwa <mt733@cornell.edu> (alumni advisor)
-    * Steve <sw787@cornell.edu> (alumni advisor)
+    * Miwa <mt733@cornell.edu> (MBA'15)
+    * Steve <sw787@cornell.edu> (MBA'15)
 
 -
 *See full list of incoming devices here: http://bit.ly/1Kiij8P*
