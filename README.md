@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/cornelltech/device-library.png?label=ready&title=Ready)](https://waffle.io/cornelltech/device-library)
 # Cornell Tech Device Library
 
 ### [See the Wiki for full list of devices](https://github.com/cornelltech/device-library/wiki)
