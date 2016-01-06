@@ -1,0 +1,21 @@
+<section id="devices" >
+  <!-- <img src="https://pbs.twimg.com/profile_images/634014441462300672/2uKkwgQk.jpg"> -->
+  <div class="container">
+    <div class="panel-group" id="accordion1">
+      <div class="panel" ng-repeat="category in categories | orderBy:'name'">
+        <div class="panel-heading">
+          <a data-toggle="collapse" data-parent="#accordion1" href="##{{category._id}}">
+            <h3> {{category.name}}</h3>
+          </a>
+        </div>
+        <div id="{{category._id}}" class="panel-collapse collapse" ng-class="$index==0?'in':''">
+          <div class="panel-body row">
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3" ng-repeat="device in devices | filter:category._id">
+              <device-jumbotron device="device" ></device-jumbotron>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

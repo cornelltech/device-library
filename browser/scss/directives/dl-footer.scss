@@ -1,0 +1,10 @@
+dl-footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+  .footer {
+    border-top: $dashed-border;
+    background-color: black;
+  }
+}

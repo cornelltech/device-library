@@ -1,0 +1,23 @@
+<section id="manage-users">
+  <div class="media device-media" ng-repeat="user in users">
+    <div class="pull-left" style="width:200px;">
+      <div class="responsive-container">
+        <div class="dummy"></div>
+        <div class="img-container">
+          <div class="centerer"></div>
+          <img ng-src="{{user.photo}}" class="img-rounded">
+        </div>
+      </div>
+    </div>
+    <div class="media-body" style="height:200px;padding-left:20px;">
+      <h4><a ng-href="mailto:{{user.email}}">{{user.name}} ({{user.email}})</a></h4>
+      <h5>Checkedout: </h5>
+      <p ng-repeat="checkedoutItem in user.checkedout">
+        <a ui-sref=""><b>{{checkedoutItem.device.name}}</b></a> Due: {{checkedoutItem.dueDate | date: mediumDate}}
+      </p>
+      <h5>Holds:</h5>
+      <p ng-repeat="hold in user.holds"><a ui-sref=""><b>{{hold.device.name}}</b></a> Available: {{hold.availableDate | date: mediumDate}}</p>
+      <label><input type="checkbox" ng-model="user.isAdmin"> Admin</label>
+    </div>
+  </div>
+</section>

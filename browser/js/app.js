@@ -1,5 +1,5 @@
 'use strict';
-window.app = angular.module('CornellTechDeviceLibrary', ['ui.router', 'ui.bootstrap', 'fsaPreBuilt']);
+window.app = angular.module('CornellTechDeviceLibrary', ['ui.router', 'fsaPreBuilt', 'textAngular']); //'ui.bootstrap', 
 
 app.config(function($urlRouterProvider, $locationProvider) {
     // This turns off hashbang urls (/#about) and changes it to something normal (/about)

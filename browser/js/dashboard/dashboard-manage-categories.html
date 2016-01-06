@@ -1,0 +1,12 @@
+<section id="manage-categories" class="white-text">
+  <div ng-repeat="category in categories">
+    
+      <h4>{{category.name}}</h4>
+<div class="row">
+<div class="col-md-3">    
+     <device-jumbotron device="category.staffPick"></device-jumbotron>
+   </div>
+ </div>
+     <button class="btn btn-primary">Pick another</button>
+    </div>
+</section>

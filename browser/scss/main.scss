@@ -2,8 +2,17 @@
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
-  background: #fdfdfd;
+  // background: #fdfdfd; 
+  // position: relative;
+  // overflow-x: hidden;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 @mixin clearfix {
@@ -15,13 +24,72 @@ body {
 }
 
 #main {
-  padding-top: 60px;
-  width: 1200px;
+  // padding-top: 60px;
+
+  // width: 1200px;
   margin: 0 auto;
+  min-height: calc(100% - 317px);
 }
 
-@import 'directives/main';
-@import 'home/main';
-@import 'about/main';
-@import 'tutorial/main';
-@import 'login/main';
+$dashed-border: 1px dashed white;
+
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+.top-padding {
+  padding-top: 60px;
+}
+
+.bottom-padding {
+  padding-bottom: 60px;
+}
+
+.responsive-container {
+  position: relative;
+  width: 100%;
+}
+
+.dummy {
+  padding-top: 100%;
+
+  /* forces 1:1 aspect ratio */
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  /* Align center inline elements */
+  font: 0/0 a;
+}
+
+.img-container .centerer {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.img-container img {
+  vertical-align: middle;
+  display: inline-block;
+  max-height: 100%;
+
+  /* <-- Set maximum height to 100% of its parent */
+  max-width: 100%;
+
+  /* <-- Set maximum width to 100% of its parent */
+}
+
+@import "directives/main";
+@import "home/main";
+@import "about/main";
+@import "tutorial/main";
+@import "login/main";
+@import "dashboard/main";
+@import "device/main";

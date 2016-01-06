@@ -1,0 +1,33 @@
+<section id="device" class="bottom-padding">
+  <div align="center">
+    <h1>{{device.name}}</h1>
+    <h5 class="text-muted">by {{device.brand}}</h5>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-9 col-sm-9 col-md-9">
+        <div align="center">
+          <img ng-src="{{device.image}}" class="img-rounded img-responsive" >
+        </div>
+        <h5 ng-repeat="category in device.categories"><span class="label label-normal"><i class="glyphicon glyphicon-tag"></i> {{category.name}}</span></h5>
+        <hr>
+        <div ta-bind="text" ng-model="device.description" ta-readonly='disabled'></div>
+        <!-- <hr> -->
+        <!-- <h4><i>Feedbacks</i></h4>
+        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.  </p> -->
+      </div>
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <div style="position:fixed;">
+          <button type="button" class="btn btn-primary btn-lg btn-block"> Borrow It</button>
+          <br>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-lg"><i class="glyphicon glyphicon-heart"></i> {{device.favorite}}</button>
+            <button type="button" class="btn btn-info btn-lg"><i class="glyphicon glyphicon-comment"></i> </button>
+            <button type="button" class="btn btn-warning btn-lg"><i class="glyphicon glyphicon-align-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

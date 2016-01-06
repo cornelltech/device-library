@@ -1,0 +1,13 @@
+<section id="dashboard" >
+  <div class="vertical-menu">
+    <ul>
+      <li class="title">{{user.name}}</li>
+      <li ng-repeat="item in items" ng-show="!item.admin || user.isAdmin" ui-sref-active="active" >
+        <a ui-sref="{{item.state}}">{{item.label}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="dashboard-main">
+    <ui-view></ui-view>
+  </div>
+</section>

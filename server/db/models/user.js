@@ -7,10 +7,12 @@ var schema = new mongoose.Schema({
         type: String
     },
     password: {
-        type: String
+        type: String,
+        select: false
     },
     salt: {
-        type: String
+        type: String,
+        select: false
     },
     twitter: {
         id: String,
@@ -23,23 +25,70 @@ var schema = new mongoose.Schema({
     },
     google: {
         id: String
+    },
+    name: {
+        type: String
+    },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
+    checkedout: [{
+        device: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Device'
+        },
+        borrowedDate: {
+            type: Date,
+            default: Date.now
+        },
+        dueDate: {
+            type: Date,
+            default: +new Date + 12096e5
+        }
+    }],
+    holds: [{
+        device: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Device'
+        },
+        queueDate: {
+            type: Date,
+            default: Date.now
+        },
+        availableDate: Date
+    }],
+    returned: [{
+        device: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Device'
+        },
+        borrowedDate: Date,
+        returnedDate: Date
+    }],
+    favs: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Device'
+    }],
+    photo: {
+        type: String
     }
 });
 
 // generateSalt, encryptPassword and the pre 'save' and 'correctPassword' operations
 // are all used for local authentication security.
-var generateSalt = function () {
+var generateSalt = function() {
     return crypto.randomBytes(16).toString('base64');
 };
 
-var encryptPassword = function (plainText, salt) {
+var encryptPassword = function(plainText, salt) {
     var hash = crypto.createHash('sha1');
     hash.update(plainText);
     hash.update(salt);
     return hash.digest('hex');
 };
 
-schema.pre('save', function (next) {
+schema.pre('save', function(next) {
 
     if (this.isModified('password')) {
         this.salt = this.constructor.generateSalt();
@@ -53,7 +102,7 @@ schema.pre('save', function (next) {
 schema.statics.generateSalt = generateSalt;
 schema.statics.encryptPassword = encryptPassword;
 
-schema.method('correctPassword', function (candidatePassword) {
+schema.method('correctPassword', function(candidatePassword) {
     return encryptPassword(candidatePassword, this.salt) === this.password;
 });
 

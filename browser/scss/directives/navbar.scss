@@ -1,60 +1,86 @@
 navbar {
+  .navbar.navbar-inverse {
+    margin-bottom: 0px;
+    background-color: black;
+    border-bottom: $dashed-border;
 
-  display: block;
-  background: white;
-  border-bottom: 1px solid black;
-  box-shadow: 1px 1px 14px -3px black;
+    a {
+      //     cursor: pointer;
+      // transition: color 0.2s;
+      color: #aab2bd;
 
-  .container {
-    width: 91%;
-    max-width: 1340px;
-    padding-top: 20px;
-  }
-
-  fullstack-logo {
-    margin-top: 5px;
-    margin-right: 20px;
-    width: 40px;
-  }
-
-  a {
-    color: black;
-    font-size: 16px;
-  }
-
-  .nav > li > a {
-    cursor: pointer;
-    transition: color 0.2s;
-    &.active {
-      color: darken(#f31214, 10%);
+      &:hover {
+        background: white;
+        color: black;
+      }
     }
-    &:hover {
-      background: none;
-      color: #f31214;
+
+    li > a {
+      font-size: 16px;
+
+      &.active {
+        // background: white;
+        // color: black;
+        font-weight: bold;
+      }
+
+      &:focus {
+        // background: white;
+        // color: black;
+        font-weight: bold;
+      }
     }
-    &:focus {
-      background: none;
+
+    .nav.navbar-nav {
+      margin-right: 20px;
     }
   }
 
-  .login-button {
-    float: right;
-    border: 1px solid black;
-    margin-top: 10px;
-    background: none;
-    outline: none !important;
+  //   background: white;
+  //   border-bottom: 1px solid black;
+  //   box-shadow: 1px 1px 14px -3px black;
+
+  //   .container {
+  //     width: 91%;
+  //     max-width: 1340px;
+  //     padding-top: 20px;
+  //   }
+
+  logo {
+    margin-top: -10px;
+    margin-right: 10px;
+    float: left;
+    display: block;
+
+    img {
+      display: block;
+      height: 40px;
+      width: auto;
+    }
   }
+
+  //   .login-button {
+  //     float: right;
+  //     border: 1px solid black;
+  //     margin-top: 10px;
+  //     background: none;
+  //     outline: none !important;
+  //   }
 
   .welcome {
     float: right;
-    margin-top: 12px;
+    margin-top: 15px;
+    margin-left: 10px;
+
+    // font-weight: bold;
+
     span {
       color: white;
     }
+
     a {
-      color: #f30046;
+      color: white;
       cursor: pointer;
     }
   }
-
 }

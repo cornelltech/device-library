@@ -1,4 +1,76 @@
 <section id="home">
-    <fullstack-logo></fullstack-logo>
-    <rando-greeting></rando-greeting>
+  <div id="carousel-home" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="##carousel-home" data-slide-to="0" class="active"></li>
+      <li data-target="##carousel-home" data-slide-to="1" class=""></li>
+      <li data-target="##carousel-home" data-slide-to="2" class=""></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item" ng-class="$index==0?'active':''" align="center" ng-repeat="device in devices | orderBy:'-dateAdded' | limitTo:3">
+        <div >
+          <img ng-src="{{device.image}}" class="img-rounded img-responsive" style="height:500px;width:auto;">
+        </div>
+        <div class="carousel-caption">
+          <h3>{{device.name}}</h3>
+        </div>
+      </div>
+      
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="##carousel-home" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="##carousel-home" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+  <hr class="no-margin">
+  <div class="staffpick">
+    <div class="container" >
+      <h3>Staff Picks</h3>
+      <div class="panel">
+        <div class="tabbable tabs-left clearfix">
+          <ul class="nav nav-tabs">
+            <li ng-repeat="category in categories | orderBy:'name'" ng-class="$index==0?'active':''">
+              <a href="##{{category._id}}" data-toggle="tab">{{category.name}}</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade" ng-class="$index==0?'active in':''" id="{{category._id}}" ng-repeat="category in categories | orderBy:'name'">
+              <div class="media">
+                <div class="pull-left" style="width:350px;">
+                  <div class="responsive-container">
+                    <div class="dummy"></div>
+                    <div class="img-container">
+                      <div class="centerer"></div>
+                      <a ui-sref="device({id:category.staffPick._id})">
+                      <img ng-src="{{category.staffPick.image}}" class="img-rounded"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-body" style="height:350px;padding-left:20px;">
+                  <h4><a ui-sref="device({id:category.staffPick._id})">{{category.staffPick.name}}</a></h4>
+                  <p>by <i>{{category.staffPick.brand}}</i></p>
+                  <div ta-bind="text" ng-model="category.staffPick.description" ta-readonly='disabled'></div>
+                </div>
+                <a class="text-muted" ng-href="/devices##{{category._id}}"><b>See all {{category.name}} devices</b></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popular">
+    <div class="container">
+      <h3>What's Popular</h3>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3" ng-repeat="device in devices | orderBy:'-favorite' | limitTo:4">
+          <device-jumbotron device="device"></device-jumbotron>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
