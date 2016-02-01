@@ -30,11 +30,23 @@ var Donor = Promise.promisifyAll(mongoose.model('Donor'));
 var donors = [{
     name: "Google",
     donations: "HTC phone, Nexus 9, Nexus Player",
-    date: new Date(2015, 11, 12)
+    date: new Date(2015, 9, 12)
 }, {
-    name: "Miwa (MBA'15)",
-    donations: "$2000",
-    date: new Date(2015, 12, 12)
+    name: "Miwa Takaki (MBA'15)",
+    donations: "$500",
+    date: new Date(2015, 1, 12)
+}, {
+    name: "Yang Hu (CS'16)",
+    donations: "iPhone 4",
+    date: new Date(2015, 9, 21)
+}, {
+    name: "Omri Sass (CM'17)",
+    donations: "2 x Google Cardboards",
+    date: new Date(2015, 9, 21)
+}, {
+    name: "Steve Wall (MBA'15)",
+    donations: "$500",
+    date: new Date(2015, 1, 12)
 }]
 
 donors = donors.map(function(datum) {
@@ -42,17 +54,13 @@ donors = donors.map(function(datum) {
 });
 
 var categories = [{
-    name: 'Wearables',
-    image: ''
+    name: 'Wearables'
 }, {
-    name: 'Robots',
-    image: ''
+    name: 'Robots'
 }, {
-    name: 'Virtual Reality',
-    image: ''
+    name: 'Virtual Reality'
 }, {
-    name: 'Connected Home',
-    image: ''
+    name: 'Connected Home'
 }, {
     name: 'Drones'
 }, {
@@ -84,44 +92,44 @@ var devices = [{
     brand: 'Apple',
     categories: [categories[5]],
     image: 'http://i.ebayimg.com/images/i/330629123334-0-1/s-l1000.jpg',
-    description: ''
+    description: '<p><i>Thanks Yang Hu (CS\'16) for donating it!</i></p><p>Specifications:<ul><li>GSM</li><li>8GB storage</li><li>White</li><li>3.5 inches</li><li>640 x 960 pixels (~330 ppi pixel density)</li><li>5MP camera</li><li>720p video</li><li>512MB RAM</li><li>Apple A4</li><li>Sensors: accelerometer, gyro, proximity, compass</li></ul></p>'
 }, {
     name: 'Samsung Gear Live',
     brand: 'Samsung',
     categories: [categories[0]],
     image: 'http://cdn1.knowyourmobile.com/sites/knowyourmobilecom/files/styles/gallery_wide/public/0/19/gear-live_black-2-1280x852.jpg?itok=ESJ4WchNg',
-    description: ''
+    description: '<p>Gear Live is compatible with any smartphone with Android™ 4.3, Jelly Bean or higher, so your app notifications and personal information come with you, like flight status and messages. And when you say “OK Google,” you can ask a question about anything, from turn-by-turn navigation steps to team stats—even find out your heart rate.</p><p>Specifications:<ul><li>Black Strap</li><li>1.63” Super AMOLED</li><li>Metal Body</li><li>IP 67 Certified Dust and Water Resistant</li><li>Compass, Accelerometer, Gyroscope, Heart Rate Sensor</li><li>Powered by Android Wear Support</li><li>Typical 1 day, Low 2 days</li><li>Bluetooth 4.0 LE</li></ul></p>'
 }, {
     name: 'Samsung Galaxy S5',
     brand: 'Samsung',
     categories: [categories[5]],
     image: 'http://melita.com/wp-content/uploads/2014/09/Samsung_Galaxy_S5_Front.jpg',
-    description: '',
+    description: '<p>The Samsung Galaxy S5 can be defined by one word: evolution.<p><p>The camera has evolved to give clearer, faster snaps. The fitness-tracking abilities of the S5 are enhanced over the Galaxy S4 by packing in a more powerful S Health app and a dedicated heart rate monitor on the rear. A fingerprint scanner adds to the most secure Galaxy phone ever made.</p><p>The battery is larger, the screen bigger and brighter, the processor quicker and the design altered.</p><p>The spec sheet certainly doesn\'t let it down: a 2.5GHz quad-core CPU, 2GB of RAM, a 2800mAh (removable) battery, 16 / 32GB of memory (with up to 128GB extra through microSD), one of the world\'s most vibrant screens that\'s been extended to 5.1-inches and added biometrics.</p>',
     favorite: 3
 }, {
-    name: 'Google Nexus 9',
+    name: 'Google Nexus 9 Tablet',
     brand: 'Google',
     categories: [categories[7]],
     image: 'http://elementalx.org/wp-content/uploads/2014/11/nexus9.png',
-    description: ''
+    description: '<p>Website: <a href="https://www.google.com/nexus/9/">https://www.google.com/nexus/9/</a></p>Specifications:<ul><li>Indigo Black</li><li>16 GB Flash Memory, 2 GB RAM Memory</li><li>Wi-Fi</li><li>Android™ 5.0 Lollipop</li><li>8.9 " IPS LCD QXGA (2048x1536)</li><li>1.6 MP Front Camera; 8 MP Rear Camera</li></ul>'
 }, {
     name: 'Google Nexus Player',
     brand: 'Google',
     categories: [categories[3]],
     image: 'http://image.itdonga.com/files/2014/10/16/004_Ukwvilr.JPG',
-    description: ''
+    description: '<p>Entertainment tailored for you</p><p>Apps, games and more, now for your TV</p><p>Website: <a href="https://www.google.com/nexus/player/">https://www.google.com/nexus/player/</a></p><p>Specifications:<ul><li>1.8GHz Quad Core, Intel® Atom™</li><li>802.11ac 2x2 (MIMO)</li><li>HDMI out</li></ul></p><p>In-box:<ul><li>Nexus Player</li><li>Remote with voice search</li><li>Power adapter</li><li>2 AAA batteries</li><li>Quick-start guide</li><li>Warranty, Safety and Regulatory booklet</li></ul></p><p>Requirements<ul><li>TV with HDMI input & HDMI cable</li><li>Internet connectivity (Wi-Fi only)</li></ul></p>'
 }, {
-    name: 'HTC One M7 UL',
+    name: 'HTC One',
     brand: 'HTC',
     categories: [categories[5]],
     image: 'http://cdn.thedroidguy.com/wp-content/uploads/2015/01/htconem7blue.jpeg',
-    description: ''
+    description: '<p>With a sleek aluminum body, a live home screen that streams all of your favorite content, a photo gallery that comes to life, and dual frontal stereo speakers, the new HTC One is ready to reshape your smartphone experience.</p><p>Website: http://www.htc.com/us/smartphones/htc-one-m7/</p><p>Specifications:<ul><li>4.7 inch, Full HD 1080p, 468 PPI</li><li>Qualcomm® Snapdragon™ 600, quad-core, 1.7GHz</li><li>Silver</li><li>32GB</li><li>RAM 2GB DDR2</li><li>GSM/LTE (UL)</li></ul></p>'
 }, {
     name: 'LG G3',
     brand: 'LG',
     categories: [categories[5]],
     image: 'http://masijee.com/wp-content/uploads/2015/05/Recovery-Mode-on-LG-G3.jpg',
-    description: ''
+    description: '<p>Website: <a href="http://www.lg.com/us/mobile-phones/g3">http://www.lg.com/us/mobile-phones/g3</a></p><p>Specifications:<ul><li>Metallic Black</li><li>Qualcomm® Snapdragon™ 801 Quad-Core Processor up to 2.5 GHz</li><li>Android 4.4.2 KitKat</li><li>5.5" Quad HD (2560 X 1440) IPS</li><li>13MP Optical Image Stabilization+ with Laser Auto Focus</li><li>Dual Flash</li><li>Front-Facing Camera 2.1 MP</li><li>1W Speaker with Boost Amp</li><li>3GB RAM / 16GB Memory</li></ul></p>'
 }, {
     name: 'WeMo® Insight Switch',
     brand: 'Belkin',
@@ -138,26 +146,26 @@ var devices = [{
     name: 'WeMo® Maker',
     brand: 'Belkin',
     categories: [categories[3]],
-    image: 'https://camo.githubusercontent.com/a320a9e07a28154df4df7b246c9e57266eb60f72/68747470733a2f2f39746f35746f79732e66696c65732e776f726470726573732e636f6d2f323031342f31312f62656c6b696e2d77656d6f2d706f73736962696c697465732e6a7067',
+    image: 'https://9to5toys.files.wordpress.com/2014/11/belkin-wemo-possibilites.jpg',
     description: '<p>WeMo Maker lets you control low-voltage electronics devices with a smartphone or tablet. Perfect for inventors and tinkerers, it\'s easy to use and works over your own home\'s Wi-Fi network. Turn things on and off, put them on schedules, or connect them to sensors that let you do even more. Like program your sprinklers to stay off when rain is forecast, or set watering schedules when you go out of town.</p><p>Website: <a href="http://www.belkin.com/us/F7C043/p/P-F7C043/">http://www.belkin.com/us/F7C043/p/P-F7C043/</a></p>'
 }, {
     name: 'WeMo® LED Lighting Starter Set',
     brand: 'Belkin',
     categories: [categories[3]],
-    image: 'https://camo.githubusercontent.com/c5f6534c46f598e6817f99863a00104b36c30a95/687474703a2f2f7777772e62656c6b696e2e636f6d2f696d616765732f70726f647563746d742f3832303030302f3337322e6a7067',
+    image: 'http://www.belkin.com/images/productmt/820000/372.jpg',
     description: '<p>The WeMo LED Lighting Starter Set lets you access and control your WeMo Smart LED Bulbs from anywhere, using your existing home Wi-Fi network and mobile internet. Dim lights, turn them on or off, or create a custom schedule that works for your family. You can also set your lights to turn on automatically at sunset, dim them to watch a movie, or turn them off after you leave home, all from your smart device.</p><p>Website: <a href="http://www.belkin.com/us/p/P-F5Z0489/">http://www.belkin.com/us/p/P-F5Z0489/</a></p><p>Package Includes:<ul><li>Two WeMo Smart LED Bulbs</li><li>WeMo Link</li><li>Quick Install Guide</li></ul></p>'
 }, {
     name: 'Mattel Mindflex Game',
     brand: 'Mattel',
     categories: [categories[6]],
-    image: 'https://camo.githubusercontent.com/b1fe9a7db416c5824ea4ff14b2dc3620487fccc2/687474703a2f2f7777772e6d696e6474656373746f72652e636f6d2f696d616765732f73746f726965732f7669727475656d6172742f70726f647563742f6d696e64666c65785f372e6a7067',
+    image: 'http://www.mindtecstore.com/images/stories/virtuemart/product/mindflex_7.jpg',
     description: '<p>The power of the mind will make a small foam ball levitate on a slight stream of air. This MindFlex brain game uses technology coupled with focused concentration to produce the outcome. The mind game includes a light-weight headset that contains sensors. These sensors read the brain waves, and help players move the ball through the various obstacle courses. Players can remain challenged by reconfiguring the obstacle courses into almost limitless possibilities. This mental acuity game challenges players to use focus, determination, and stamina to move the ball through the obstacles.</p><ul><li>For ages 8 and up</li><li>Requires 4 C and 2 AAA batteries</li></ul><p>How to Hack Toy EEGs (<a href="http://www.frontiernerds.com/brain-hack">http://www.frontiernerds.com/brain-hack</a>)</p>'
 }, {
     name: '94Fifty Smart Basketball',
     brand: '94Fifty',
     categories: [categories[8]],
     image: 'http://www.sportsfeelgoodstories.com/wp-content/uploads/2014/01/Screen-shot-2014-01-12-at-5.30.20-PM.png',
-    description: '<p>The word’s first smart basketball measures any forces applied to it – spin, acceleration, you name it. A full 360 degree view of the ball – and the player that moves it. The ball is going to give you data and feedback to your device that is smart, actionable and precise.</p><p>Price: $180</p><p>Size: 7</p><p>Website: <a href="http://www.94fifty.com/learn-more/smart-basketball/">http://www.94fifty.com/learn-more/smart-basketball/</a></p><p><a href="https://itunes.apple.com/us/app/94fifty-basketball/id724955707?mt=8&ign-mpt=uo%3D4">iOS app</a></p><p><a href="https://play.google.com/store/apps/details?id=com.spectrumdt.ist">Android app</a></p><p><a herf="https://glass.google.com/glassware/12291182233126993074">Glass</a></p>'
+    description: '<p>The word’s first smart basketball measures any forces applied to it – spin, acceleration, you name it. A full 360 degree view of the ball – and the player that moves it. The ball is going to give you data and feedback to your device that is smart, actionable and precise.</p><p>Price: $180</p><p>Size: 7</p><p>Website: <a href="http://www.94fifty.com/learn-more/smart-basketball/">http://www.94fifty.com/learn-more/smart-basketball/</a></p><p><a href="https://itunes.apple.com/us/app/94fifty-basketball/id724955707?mt=8&ign-mpt=uo%3D4">iOS app</a></p><p><a href="https://play.google.com/store/apps/details?id=com.spectrumdt.ist">Android app</a></p><p><a href="https://glass.google.com/glassware/12291182233126993074">Glass</a></p>'
 }, {
     name: 'Adidas miCoach Soccer Ball',
     brand: 'Adidas',
@@ -175,7 +183,7 @@ var devices = [{
     brand: 'Apple',
     categories: [categories[7]],
     image: 'http://www.zonablack.com/pictures/items/2/1/32.20120420070519967.1.large.png',
-    description: '<p><i>Donated</i>The iPad is a 9.7 inch touch screen tablet PC made by Apple . The iPad is basically a netbook without a keyboard. It has a multi-touch LED-backlit 9.7 x 7.5 inch front display and weighs 1.5 pounds, with a battery that lasts up to ten hours.</p>'
+    description: '<p><i>Donated</i><p><p>The iPad is a 9.7 inch touch screen tablet PC made by Apple. The iPad is basically a netbook without a keyboard. It has a multi-touch LED-backlit 9.7 x 7.5 inch front display and weighs 1.5 pounds, with a battery that lasts up to ten hours.</p>'
 }, {
     name: 'Amazon Echo',
     brand: 'Amazon',
@@ -187,19 +195,19 @@ var devices = [{
     brand: 'Apple',
     categories: [categories[0]],
     image: 'http://appdesignvault.s3.amazonaws.com/watch-post/Apple-Watch.psd_-1024x875.png',
-    description: '<p>Apple Watch is unlike any device we’ve ever made. But we wanted interacting with it to be just as easy and intuitive as using your iPhone or working on a Mac. So we invented all-new ways to select, navigate, and input that are ideally suited to a smaller device worn on the wrist.</p><p>Price: $350</p><p>Website: <a href="https://www.apple.com/watch/apple-watch-sport/silver-aluminum-case-white-sport-band/">https://www.apple.com/watch/apple-watch-sport/silver-aluminum-case-white-sport-band/</a></p><p>Specifications <ul><li>38 mm Case</li> <li>7000 Series Silver Aluminum </li><li>Ion-X Glass Retina Dsipaly</li> <li>Composite Back <li>White</li> <li>Sport Band </li><li>316 L Stainless Steel Pin</li> </li></p>'
+    description: '<p>Apple Watch is unlike any device we’ve ever made. But we wanted interacting with it to be just as easy and intuitive as using your iPhone or working on a Mac. So we invented all-new ways to select, navigate, and input that are ideally suited to a smaller device worn on the wrist.</p><p>Price: $350</p><p>Website: <a href="https://www.apple.com/watch/apple-watch-sport/silver-aluminum-case-white-sport-band/">https://www.apple.com/watch/apple-watch-sport/silver-aluminum-case-white-sport-band/</a></p><p>Specifications: <ul><li>38 mm Case</li> <li>7000 Series Silver Aluminum </li><li>Ion-X Glass Retina Dsipaly</li> <li>Composite Back <li>White</li> <li>Sport Band </li><li>316 L Stainless Steel Pin</li> </li></p>'
 }, {
     name: 'Canary',
     brand: 'Canary',
     categories: [categories[3]],
-    image: 'https://camo.githubusercontent.com/ce3ac773d27e8904e86cdd5438fe7608683abc11/687474703a2f2f70686f746f73322e6170706c65696e736964657263646e2e636f6d2f63616e6172792d3133303732322d322e6a7067',
-    description: ''
+    image: 'http://photos2.appleinsidercdn.com/canary-130722-2.jpg',
+    description: '<p><i>Donated by Canary</i></p><p>Canary is the only all-in-one home security system that lets you see what’s happening at home and take action. From HD video to motion-activated alerts to a 90+ decibel siren, Canary gives you everything you need to keep your home safe.</p><p>Price: $250</p><p>Website: <a href="https://canary.is/">https://canary.is/</a></p><p>Camera<ul><li>1080p HD camera</li><li>147° Wide-angle lens</li><li>Automatic night vision</li><li>Motion detection</li></ul></p><p>Sensors<ul><li>3-axis accelerometer</li><li>Ambient light</li><li>Capacitive touch</li></ul></p><p>HomeHealth Technology™<ul><li>Temperature</li><li>Humidity</li><li>Air quality</li></ul><p>Audio & Siren<ul><li>High-quality microphone</li><li>Built-in speaker</li><li>90+ dB siren</li></ul></p>Connectivity<ul><li>2.4GHz Wi-Fi (802.11 b/g/n)</li><li>Wired Ethernet</li></ul></p><p>Size & Weight<ul><li>Height: 6 in (152.4 mm)</li><li>Diameter: 3 in (76.2 mm)</li><li>Weight: 0.87 lb (396 g)</li></ul></p><p>Power<ul><li>100-240v power supply</li></ul></p>'
 }, {
     name: 'HP® Sprout',
     brand: 'HP',
     categories: [categories[9]],
-    image: 'https://camo.githubusercontent.com/16d32f0d4029e569a75dd329931b47e2bda58141/68747470733a2f2f7370726f75742e68702e636f6d2f75732f77702d636f6e74656e742f75706c6f6164732f73697465732f34332f323031352f30332f70726f647563745370726f75742e706e67',
-    description: ''
+    image: 'http://static.independent.co.uk/s3fs-public/thumbnails/image/2015/02/13/14/HP-sprout.jpg',
+    description: '<i>Donated by HP</i><p>Sprout is a revolutionary all-in-one computer that makes it easier than ever to get creative. By blurring the line between physical and digital, sprout lets you bring your creativity to life, instantly.</p><p>Website: <a href="http://www8.hp.com/us/en/sprout/home.html">http://www8.hp.com/us/en/sprout/home.html</a></p><p>Apps: <a href="http://www8.hp.com/us/en/sprout/apps.html">http://www8.hp.com/us/en/sprout/apps.html</a></p><p>Developers: <a href="https://sprout-developers.rssx.hp.com/">https://sprout-developers.rssx.hp.com/</a></p>'
 }, {
     name: 'Narrative Clip',
     brand: 'Narrative',
@@ -207,35 +215,35 @@ var devices = [{
     image: 'http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2014/02/The-Narrative-Clip.png',
     description: '<p>The Narrative Clip is a tiny, automatic camera and app that gives you a searchable and shareable photographic memory.</p><p>Price: $150</p><p>Website: <a href="http://getnarrative.com/">http://getnarrative.com/</a></p><p><a href="https://itunes.apple.com/app/narrative/id722804868?ls=1&mt=8">iOS app</a></p><p><a href="https://play.google.com/store/apps/details?id=com.narrative.main">Android app</a></p><p><a href="http://dl.getnarrative.com/appcast/installers/NarrativeUploader.dmg">Mac app</a></p>'
 }, {
-    name: 'Occulus DK2',
-    brand: 'Occulus',
+    name: 'Oculus Rift DK2',
+    brand: 'Oculus',
     categories: [categories[2]],
-    image: 'https://camo.githubusercontent.com/ad0f29518fa29c56720e88b95938b0bfcc6d76c2/68747470733a2f2f646276633475616e756d6932642e636c6f756466726f6e742e6e65742f63646e2f342e352e31382f77702d636f6e74656e742f7468656d65732f6f63756c75732f696d672f6f726465722f646b322d70726f647563742e6a7067',
-    description: ''
+    image: 'https://dbvc4uanumi2d.cloudfront.net/cdn/4.5.18/wp-content/themes/oculus/img/order/dk2-product.jpg',
+    description: '<p>Next-generation virtual reality</p><p>Rift is unlike anything you’ve ever experienced. Whether you’re stepping into your favorite game, watching an immersive VR movie, jumping to a destination on the other side of the world, or just spending time with friends in VR, you’ll feel like you’re really there.</p><p>Rift uses state of the art displays and optics designed specifically for VR. Its high refresh rate and low-persistence display work together with its custom optics system to provide incredible visual fidelity and an immersive, wide field of view.</p><p>Website: <a href="https://www.oculus.com/en-us/dk2/">https://www.oculus.com/en-us/dk2/</a></p><p>Price: $350</p>'
 }, {
     name: 'Parrot Bebop Drone',
     brand: 'Parrot',
     categories: [categories[4]],
-    image: 'https://camo.githubusercontent.com/14de148a3d6aa94058ae70544de308a712ddff3b/687474703a2f2f6d656469612e626573746f666d6963726f2e636f6d2f332f532f3437303538342f6f726967696e616c2f506172726f742d4265626f702d30312e6a7067',
-    description: ''
+    image: 'http://media.bestofmicro.com/3/S/470584/original/Parrot-Bebop-01.jpg',
+    description: '<p><i>Donated by Parrot</i></p><p>Parrot Bebop Drone is a lightweight yet robust quadricopter with 14 megapixel Full HD 1080p "fisheye" Camera and 3-axes image stabilization</p><p>Website: https://www.parrot.com/usa/products/bebop-drone/</p><p>Price: $500</p><p>Specifications:<ul><li>App-Controlled</li><li>Wi-Fi Built-in</li><li>Integrated GPS</li><li>Integrated Camera</li><li>Video Resolution 1920 x 1080</li><li>No 3D Capture</li><li>14 megapixels</li><li>30 frames per second</li><li>Image File Format(s) DNG, RAW</li><li>Recommended Minimum Age: 14 years</li><li>Color Yellow</li></ul></p>'
 }, {
     name: 'Polaroid Cube',
     brand: 'Polaroid',
     categories: [categories[6]],
     image: 'https://www.polaroidcube.com/shop/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/o/polaroidcube-black_1_.png',
-    description: ''
+    description: '<p>World\'s Funnest, Cutest Lifestyle Action Camera in Tiny Cubic Package.</p><p>The Polaroid CUBE HD lifestyle action video camera is weatherproof/splash proof, mountable and built to handle everything you can imagine.</p><p>Price: $100</p><p>Website: <a href="https://www.polaroidcube.com/">https://www.polaroidcube.com/</a></p><p>Specifications:<ul><li>Records HD 1080p/720p video</li><li>Professional 6MP Still Photos</li><li>124º viewing angle</li><li>Weatherproof/splash proof</li><li>LED Indicator</li><li>Microphone</li><li>Built in high capacity battery, records up to 90 minutes</li><li>Black</li></ul></p>'
 }, {
     name: 'Ring™ Video Doorbell',
     brand: 'Ring™',
     categories: [categories[3]],
     image: 'http://www.thegreenhead.com/imgs/ring-video-smart-doorbell-1.jpg',
-    description: '<p><i>Donated by company</i></p><p>The Ring™ Video Doorbell lets you answer the door from anywhere using your smartphone. It features an HD camera with night vision, providing a clear view from your front door, day and night.</p><p>Website: <a href="https://ring.com/">https://ring.com/</a></p>'
+    description: '<p><i>Donated by Ring</i></p><p>The Ring™ Video Doorbell lets you answer the door from anywhere using your smartphone. It features an HD camera with night vision, providing a clear view from your front door, day and night.</p><p>Price: $180</p><p>Website: <a href="https://ring.com/">https://ring.com/</a></p>'
 }, {
     name: 'SmartThings Smart Home Starter Kit',
     brand: 'SmartThings',
     categories: [categories[3]],
-    image: 'https://camo.githubusercontent.com/42644a7dae2e67058d462f58c53e6c12fdb778f1/687474703a2f2f737461746963332e627573696e657373696e73696465722e636f6d2f696d6167652f3532663761613238363962656464353832613335373034622d3438302f736d6172747468696e67732d737461727465722d6b69742e6a7067',
-    description: ''
+    image: 'http://static3.businessinsider.com/image/52f7aa2869bedd582a35704b-480/smartthings-starter-kit.jpg',
+    description: '<p><i>Donated by SmartThings</i></p><p>*See An Nguyen</p><p>The Smart Home Starter Kit lets you easily see what’s happening at home from wherever you are. Secure your home to protect family and property; stay connected to loved ones by getting notifications when people, pets, and cars come and go; and create a safer, smarter home in the palm of your hand.</p><p>Price: $200</p><p>Website: <a href="https://shop.smartthings.com/#!/kits/smart-home-starter-kit">https://shop.smartthings.com/#!/kits/smart-home-starter-kit</a></p><a href="https://itunes.apple.com/us/app/smartthings-mobile/id590800740">iOS app</a><a href="https://play.google.com/store/apps/details?id=com.smartthings.android#?t=W251bGwsMSwxLDIxMiwiY29tLnNtYXJ0dGhpbmdzLmFuZHJvaWQiXQ..">Android app</a><p>In-box:<ul><li>SmartThings Hub</li><li>SmartPower Outlet</li><li>SmartSense Motion Sensor</li><li>SmartSense Presence Sensor</li><li>SmartSense Open/Closed Sensor</li>SmartSense Moisture Sensor</li><li>SmartSense Multi Sensor</li><li>SmartSense Temp/Humidity Sensor</li><li></ul></p>'
 }, {
     name: 'Sphero Ollie',
     brand: 'Sphero',
@@ -258,14 +266,14 @@ var devices = [{
     name: 'PULSE Jump Rope',
     brand: 'Uncharted Play',
     categories: [categories[8]],
-    image: 'https://camo.githubusercontent.com/05e33fc05218c006e7d87c4579e25aefa1830816/68747470733a2f2f677265656e73706f727473626c6f672e66696c65732e776f726470726573732e636f6d2f323031342f30352f70756c73652d69692e706e67',
-    description: ''
+    image: 'https://greensportsblog.files.wordpress.com/2014/05/pulse-ii.png',
+    description: '<p>The PULSE is a portable, emergency battery charging jump rope designed to promote physical activity and spread awareness about the global energy problem.</p><p>The PULSE is a jump rope, just like any other. However, what makes the PULSE so unique is that it also acts as a portable battery charger—plug it in to your wall or laptop, charge it up and take it with you. You can also charge up your PULSE simply by using it as a jump rope. So when you need a little more power and you aren’t near an outlet, you have the option to play!</p><p>Price: $100</p>'
 }, {
     name: 'Uncharted Play SOCCKET II',
     brand: 'Uncharted Play',
     categories: [categories[8]],
-    image: 'https://camo.githubusercontent.com/29dfaf00878458172d88bdadc06a1ddb931a2229/687474703a2f2f63646e2e73686f706966792e636f6d2f732f66696c65732f312f303730342f303432312f70726f64756374732f556e63686172746564506c61795f534f43434b45545f3030382e6a70673f763d31343233323433373330',
-    description: ''
+    image: 'http://cdn.shopify.com/s/files/1/0704/0421/products/UnchartedPlay_SOCCKET_008.jpg?v=1423243730',
+    description: '<p>The SOCCKET is a portable, power generating soccer ball designed to promote physical activity and spread awareness about the global energy problem.</p><p>The SOCCKET gets charged up during normal game play. The more the ball rolls, the more power that\'s generated. The SOCCKET is designed to power our energy efficient, 3-LED lamp. To access the power, pull back the rubber stopper, and plug the lamp down into the center of the ball.</p><p>Price: $100</p>'
 }]
 
 devices = devices.map(function(datum) {
@@ -313,6 +321,38 @@ var users = [{
         returnedDate: new Date(2015, 11, 16)
     }],
     favs: [devices[7]._id, devices[0]._id, devices[2]._id]
+}, {
+    email: 'rz258@cornell.edu',
+    password: '123',
+    name: 'Joanna Zhang',
+    checkedout: [{
+        device: devices[1]._id,
+        borrowedDate: new Date(2015, 10, 12),
+        dueDate: new Date(2015, 10, 24)
+    }, {
+        device: devices[3]._id,
+        borrowedDate: new Date(2015, 8, 24),
+        dueDate: new Date(2015, 9, 2)
+    }],
+    holds: [{
+        device: devices[8]._id,
+        queueDate: new Date(2015, 9, 9),
+        availableDate: new Date(2015, 10, 9)
+    }, {
+        device: devices[9]._id,
+        queueDate: new Date(2015, 10, 9),
+        availableDate: new Date(2015, 11, 9)
+    }],
+    returned: [{
+        device: devices[6]._id,
+        borrowedDate: new Date(2015, 10, 12),
+        returnedDate: new Date(2015, 10, 26)
+    }, {
+        device: devices[7]._id,
+        borrowedDate: new Date(2015, 11, 15),
+        returnedDate: new Date(2015, 11, 16)
+    }],
+    favs: [devices[1]._id, devices[2]._id, devices[3]._id]
 }]
 
 users = users.map(function(datum) {

@@ -12,7 +12,10 @@ body {
   // background: #fdfdfd; 
   // position: relative;
   // overflow-x: hidden;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+
+  // font-size: 14px;
 }
 
 @mixin clearfix {
@@ -24,18 +27,25 @@ body {
 }
 
 #main {
-  // padding-top: 60px;
-
-  // width: 1200px;
   margin: 0 auto;
   min-height: calc(100% - 317px);
 }
 
 $dashed-border: 1px dashed white;
+$ctdl-blue: #32AEDC;
+
+hr.dashed {
+  border-top: 1px dashed black;
+}
 
 .no-margin {
   margin: 0;
   padding: 0;
+}
+
+.smaller-width {
+  margin: 0 auto;
+  width: 60%;
 }
 
 .top-padding {
@@ -46,6 +56,11 @@ $dashed-border: 1px dashed white;
   padding-bottom: 60px;
 }
 
+.right-border {
+  border-right: 1px solid #EEEEEE;
+}
+
+/* resposive image container */
 .responsive-container {
   position: relative;
   width: 100%;
@@ -91,5 +106,6 @@ $dashed-border: 1px dashed white;
 @import "about/main";
 @import "tutorial/main";
 @import "login/main";
+@import "signup/main";
 @import "dashboard/main";
 @import "device/main";

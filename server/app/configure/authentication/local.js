@@ -13,6 +13,7 @@ module.exports = function(app) {
         User.findOne({
                 email: email
             })
+            .select('+password +salt')
             .populate("checkedout.device holds.device returned.device favs")
             .exec()
             .then(function(user) {
@@ -37,7 +38,6 @@ module.exports = function(app) {
     app.post('/login', function(req, res, next) {
 
         var authCb = function(err, user) {
-
             if (err) return next(err);
 
             if (!user) {

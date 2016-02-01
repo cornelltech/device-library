@@ -1,0 +1,16 @@
+<div class="top-padding bottom-padding">
+  <form id="signup-form" name="signupForm" ng-submit="signupForm.$valid && sendSignup(signup)">
+    <alert type="danger" ng-show="error">
+      {{ error }}
+    </alert>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="text" ng-model="signup.email" class="form-control" id="signup-email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="signup-password">Password</label>
+      <input type="password" ng-model="signup.password" class="form-control" id="signup-password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-default">Signup</button>
+  </form>
+</div>
